@@ -1,6 +1,18 @@
-FROM jupyter/minimal-notebook:notebook-6.4.3
+FROM continuumio/miniconda3
 
-USER root
-RUN apt-get update -y
-RUN apt-get install python3-pip python3-venv -y
-USER 1000
+WORKDIR /app
+
+COPY environment.yml .
+RUN conda env create -f environment.yml -n toce
+
+# Make RUN commands use the new environment:
+RUN echo "conda activate toce" >> ~/.bashrc
+SHELL ["/bin/bash", "--login", "-c"]
+
+# Demonstrate the environment is activated:
+RUN echo "Make sure numpy is installed:"
+RUN python -c "import numpy"
+
+# The code to run when container is started:
+COPY entrypoint.sh ./
+ENTRYPOINT ["./entrypoint.sh"]
