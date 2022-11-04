@@ -1,11 +1,17 @@
 import click
 import sys
+import pickle
+import json
 
 # pandas
 import pandas as pd
 
 #sklearn
-from sklearn.model_selection import GridSearchCV
+from skopt.space import Real, Categorical, Integer
+from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
+from skopt import BayesSearchCV
+
+from sklearn.svm import SVR
 
 # project
 sys.path.append('src')
@@ -16,51 +22,43 @@ from data import get_features, get_targets
 @click.command()
 @click.argument('input_file', type=click.Path(exists=True, readable=True, dir_okay=False))
 @click.argument('output_file', type=click.Path(writable=True, dir_okay=False))
-
 def main(input_file, output_file):
     print('Training model')
 
     df = read_processed_data(input_file)
-    model = SVRModel()
     
-    #model.train(df)
+    model = SVR()
     
-    # Metrics
-    scoring = ['neg_mean_absolute_error']
-    params = [{
-            'svr__C': [0.01,0.1,1,2,3,4,5,6],
-            'svr__epsilon': [0.001,0.005,0.01,0.01,0.1,1],
-            'svr__kernel': ['rbf']
-          }]
-  
-    gs = GridSearchCV(model.model,
-                param_grid=params,
-                scoring=scoring,
-                refit='neg_mean_absolute_error',
-                cv=20, 
-                return_train_score=True,
-                verbose=3)
+    # define search space
+    search_space = dict()
+    search_space['C'] = Real(1e-6, 100.0, 'log-uniform')
+    search_space['gamma'] = Real(1e-6, 100.0, 'log-uniform')
+    search_space['degree'] = Integer(1,5)
+    search_space['kernel'] = Categorical(['linear', 'poly', 'rbf', 'sigmoid'])
     
+    kf = KFold(n_splits = 10, shuffle = True, random_state = 42)                                          
+    loo = LeaveOneOut() 
+    opt = BayesSearchCV(model, 
+                     search_space,
+                     n_iter = 150,
+                     cv = loo,
+                     n_jobs = -1,
+                     scoring = "neg_root_mean_squared_error",
+                     random_state = 42, verbose = 3,
+                     return_train_score=True
+                    )
+           
     X = get_features(df)
     y = get_targets(df)
-    gs.fit(X,y)
     
-    result_cols = ['mean_fit_time',
-                'mean_score_time' ,
-                    'params',
-                'mean_test_neg_mean_absolute_error',
-                'std_test_neg_mean_absolute_error',
-                'rank_test_neg_mean_absolute_error',
-                'mean_train_neg_mean_absolute_error',
-                'std_train_neg_mean_absolute_error']
-      
-    df_results = pd.DataFrame.from_dict(gs.cv_results_, orient='columns')
-    df_results = df_results[result_cols].sort_values(by='rank_test_neg_mean_absolute_error')
-    #print('\nMAE: ', model.eval(df))
+    opt.fit(X, y)
     
-    df_results.to_csv('metrics.csv',sep="\t")
     
-    model.save(output_file)
-
+    df = pd.DataFrame(opt.cv_results_)
+    df.to_csv(output_file+'.csv')
+ 
+    with open(output_file, 'wb') as ofile:
+        pickle.dump(model, ofile, pickle.HIGHEST_PROTOCOL)
+   
 if __name__ == '__main__':
     main()
