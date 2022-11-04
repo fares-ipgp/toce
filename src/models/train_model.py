@@ -33,8 +33,11 @@ def main(input_file, output_file):
     search_space = dict()
     search_space['C'] = Real(1e-6, 100.0, 'log-uniform')
     search_space['gamma'] = Real(1e-6, 100.0, 'log-uniform')
-    search_space['degree'] = Integer(1,5)
-    search_space['kernel'] = Categorical(['linear', 'poly', 'rbf', 'sigmoid'])
+    #search_space['degree'] = Integer(1,5)
+    search_space['kernel'] = Categorical(['linear', 
+                                          #'poly', 
+                                          'rbf', 
+                                          'sigmoid'])
     
     kf = KFold(n_splits = 10, shuffle = True, random_state = 42)                                          
     loo = LeaveOneOut() 
