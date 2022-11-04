@@ -11,17 +11,16 @@ sys.path.append('src')
 from models.base import BaseModel
 
 # SVR model
-class PreProcess(BaseModel):
+class Preprocess(BaseModel):
     
     def __init__(self):
 
         # Model name              
         self.name = 'Preprocessor'
                 
-        # Column transformer (Only Numeric)
+        # Standard scaler
         num = StandardScaler()
-        cols = ColumnTransformer( transformers = [('num', num)] )
         
         # Model
-        self.model = Pipeline(steps=[('cols',cols)]
+        self.model = num
 

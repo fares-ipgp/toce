@@ -3,6 +3,10 @@ import sys
 
 # sklearn
 from sklearn.base import BaseEstimator
+from sklearn.metrics import r2_score
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_absolute_percentage_error
 
 # project
 sys.path.append('src')
@@ -18,6 +22,9 @@ class BaseModel(object):
         # Model
         self.model = BaseEstimator()
 
+    def get_model(self):
+        return self.model
+    
     def get_params(self):
         return self.model.get_params()
 
@@ -29,6 +36,21 @@ class BaseModel(object):
     def predict(self, X):
         y_pred = self.model.predict(X)
         return y_pred
+    
+    def eval(self, df):
+        X = get_features(df)
+        y = get_targets(df)
+        
+        y_pred = self.predict(X)
+        
+        metrics = {}
+        metrics['r2']=r2_score(y,y_pred)        
+        metrics['mse']=mean_squared_error(y,y_pred)
+        metrics['mae']=mean_absolute_error(y,y_pred)
+        metrics['mape']=mean_absolute_percentage_error(y,y_pred)
+        
+        return metrics
+        
 
     def save(self, fn):
         with open(fn, 'wb') as ofile:

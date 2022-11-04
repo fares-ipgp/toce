@@ -1,7 +1,7 @@
 
 .PHONY: all clean update-env
 
-TOC_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/toce_data.csv"
+TOC_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/toce_mayer.csv"
 
 all: data/raw/toce.csv data/processed/processed.pickle models/svr.model
 

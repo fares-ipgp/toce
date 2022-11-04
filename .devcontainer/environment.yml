@@ -13,6 +13,7 @@ dependencies:
   - click
   - wandb
   - mlflow
+  - scikit-optimize
   - pip:
     - watermark
     - pytest
