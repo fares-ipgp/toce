@@ -32,12 +32,13 @@ def main(input_file, output_file):
     # define search space
     search_space = dict()
     search_space['C'] = Real(1e-6, 100.0, 'log-uniform')
-    search_space['gamma'] = Real(1e-6, 100.0, 'log-uniform')
+    search_space['epsilon'] = Real(1e-6, 100.0, 'log-uniform')
     #search_space['degree'] = Integer(1,5)
     search_space['kernel'] = Categorical(['linear', 
                                           #'poly', 
-                                          'rbf', 
-                                          'sigmoid'])
+                                          #'rbf', 
+                                          #'sigmoid'
+                                          ])
     
     kf = KFold(n_splits = 10, shuffle = True, random_state = 42)                                          
     loo = LeaveOneOut() 
@@ -46,7 +47,7 @@ def main(input_file, output_file):
                      n_iter = 150,
                      cv = loo,
                      n_jobs = -1,
-                     scoring = "neg_root_mean_squared_error",
+                     scoring = "neg_mean_absolute_error",
                      random_state = 42, verbose = 3,
                      return_train_score=True
                     )
