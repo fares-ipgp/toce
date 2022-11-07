@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/2329798bea0f4f2496375d36f536e9f4/artifacts
+deleted_time: 1667846926300
+end_time: 1667835464996
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 2329798bea0f4f2496375d36f536e9f4
+run_name: popular-dove-963
+run_uuid: 2329798bea0f4f2496375d36f536e9f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667835461506
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/113702879b9043068cbcd0c9e529359a/artifacts
+deleted_time: 1667846931819
+end_time: 1667833815729
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 113702879b9043068cbcd0c9e529359a
+run_name: chill-swan-121
+run_uuid: 113702879b9043068cbcd0c9e529359a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667833811452
+status: 3
+tags: []
+user_id: root

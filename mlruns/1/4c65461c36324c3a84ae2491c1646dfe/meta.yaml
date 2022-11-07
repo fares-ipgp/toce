@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/4c65461c36324c3a84ae2491c1646dfe/artifacts
+deleted_time: 1667846920471
+end_time: 1667844565835
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 4c65461c36324c3a84ae2491c1646dfe
+run_name: judicious-moth-176
+run_uuid: 4c65461c36324c3a84ae2491c1646dfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667844559502
+status: 3
+tags: []
+user_id: root

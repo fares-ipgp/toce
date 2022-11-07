@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/592717a1866b46ceb89cf1e5a7c14f49/artifacts
+deleted_time: 1667833725553
+end_time: 1667831735542
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 592717a1866b46ceb89cf1e5a7c14f49
+run_name: dapper-crow-731
+run_uuid: 592717a1866b46ceb89cf1e5a7c14f49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667831731882
+status: 3
+tags: []
+user_id: root

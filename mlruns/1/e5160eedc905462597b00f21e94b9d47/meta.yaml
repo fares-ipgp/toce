@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/e5160eedc905462597b00f21e94b9d47/artifacts
+deleted_time: 1667846923275
+end_time: 1667841152451
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: e5160eedc905462597b00f21e94b9d47
+run_name: carefree-hawk-431
+run_uuid: e5160eedc905462597b00f21e94b9d47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667841151296
+status: 3
+tags: []
+user_id: root

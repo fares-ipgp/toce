@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/21e45683f5e94b57a38a1738fe242650/artifacts
+deleted_time: 1667846926555
+end_time: 1667839828253
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 21e45683f5e94b57a38a1738fe242650
+run_name: fearless-shrimp-269
+run_uuid: 21e45683f5e94b57a38a1738fe242650
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667839827619
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/f1357bb4bb50441eb9719bf00c0215ff/artifacts
+deleted_time: 1667833723803
+end_time: 1667832620279
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: f1357bb4bb50441eb9719bf00c0215ff
+run_name: beautiful-ant-407
+run_uuid: f1357bb4bb50441eb9719bf00c0215ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667832616509
+status: 3
+tags: []
+user_id: root

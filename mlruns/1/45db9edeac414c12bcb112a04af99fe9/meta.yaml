@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/45db9edeac414c12bcb112a04af99fe9/artifacts
+deleted_time: 1667833725618
+end_time: 1667831660144
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 45db9edeac414c12bcb112a04af99fe9
+run_name: overjoyed-hen-940
+run_uuid: 45db9edeac414c12bcb112a04af99fe9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667831656010
+status: 3
+tags: []
+user_id: root

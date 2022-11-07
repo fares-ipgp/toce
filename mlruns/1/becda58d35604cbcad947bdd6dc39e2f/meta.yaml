@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/becda58d35604cbcad947bdd6dc39e2f/artifacts
+deleted_time: 1667833722909
+end_time: 1667832854695
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: becda58d35604cbcad947bdd6dc39e2f
+run_name: lyrical-squirrel-688
+run_uuid: becda58d35604cbcad947bdd6dc39e2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667832853241
+status: 4
+tags: []
+user_id: root

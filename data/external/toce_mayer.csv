@@ -1,4 +1,4 @@
-﻿sample,depth_m,facies_num,bioturb,amb1,amb2,drx_qz,drx_pl,drx_fk,drx_ca,drx_py,drx_arc,drx_arc_i,drx_arc_is,drx_arc_cl,drx_arc_k,toc,if
+﻿sample,depth_m,geo_facies_num,geo_bioturb,geo_amb1,geo_amb2,drx_qz,drx_pl,drx_fk,drx_ca,drx_py,drx_arc,drx_arc_i,drx_arc_is,drx_arc_cl,drx_arc_k,toc,if
 PEVP1-15,207,12,0,0,1,6,3,1,1,1,3,32,19,49,0,,
 PEVP1-14,205,12,0,0,1,6,3,1,3,1,3,35,16,49,0,0.09,0.84
 PEVP1-13,202,12,0,0,1,6,3,1,2,1,3,39,11,49,0,,

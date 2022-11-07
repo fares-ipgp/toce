@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/46140457a36d45ff95657c0147d19525/artifacts
+deleted_time: 1667846930517
+end_time: 1667834096794
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 46140457a36d45ff95657c0147d19525
+run_name: rebellious-hound-557
+run_uuid: 46140457a36d45ff95657c0147d19525
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667834093129
+status: 3
+tags: []
+user_id: root

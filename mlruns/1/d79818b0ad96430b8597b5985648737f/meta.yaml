@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/d79818b0ad96430b8597b5985648737f/artifacts
+deleted_time: 1667833724799
+end_time: 1667831773797
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: d79818b0ad96430b8597b5985648737f
+run_name: orderly-stag-772
+run_uuid: d79818b0ad96430b8597b5985648737f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667831770084
+status: 3
+tags: []
+user_id: root

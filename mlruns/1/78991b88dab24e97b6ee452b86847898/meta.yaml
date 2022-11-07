@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/78991b88dab24e97b6ee452b86847898/artifacts
+deleted_time: 1667846922024
+end_time: 1667843021190
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 78991b88dab24e97b6ee452b86847898
+run_name: unequaled-crow-253
+run_uuid: 78991b88dab24e97b6ee452b86847898
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667843020193
+status: 3
+tags: []
+user_id: root

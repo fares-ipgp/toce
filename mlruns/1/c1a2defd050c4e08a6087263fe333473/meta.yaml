@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/c1a2defd050c4e08a6087263fe333473/artifacts
+deleted_time: 1667846930861
+end_time: 1667833824059
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: c1a2defd050c4e08a6087263fe333473
+run_name: nosy-crow-303
+run_uuid: c1a2defd050c4e08a6087263fe333473
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667833820695
+status: 3
+tags: []
+user_id: root

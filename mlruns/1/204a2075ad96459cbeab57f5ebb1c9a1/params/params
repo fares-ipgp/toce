@@ -1,0 +1,1 @@
+[OrderedDict([('C', 0.0019091131576909443), ('epsilon', 0.6634465582030861), ('kernel', 'linear')]), OrderedDict([('C', 5.001575677983704), ('epsilon', 11.655266791092009), ('kernel', 'linear')]), OrderedDict([('C', 0.003619595990038508), ('epsilon', 22.375882528244357), ('kernel', 'linear')])]

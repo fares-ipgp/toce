@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/24b08179f4ee444e85e34392bdc0893b/artifacts
+deleted_time: 1667846925733
+end_time: 1667839895843
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 24b08179f4ee444e85e34392bdc0893b
+run_name: rogue-smelt-57
+run_uuid: 24b08179f4ee444e85e34392bdc0893b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667839895293
+status: 3
+tags: []
+user_id: root

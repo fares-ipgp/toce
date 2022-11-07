@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/7dc0f7820aea45059fd2a3a6a5a0aa58/artifacts
+end_time: 1667847035824
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 7dc0f7820aea45059fd2a3a6a5a0aa58
+run_name: beautiful-pug-386
+run_uuid: 7dc0f7820aea45059fd2a3a6a5a0aa58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667847033072
+status: 3
+tags: []
+user_id: root

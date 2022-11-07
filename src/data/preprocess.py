@@ -1,29 +1,21 @@
 import click
 import pandas as pd
 
-def get_columns_features():
-    return [ #'depth_m',
-             #'facies_num',
-             #'bioturb',
-             #'amb1',
-             #'amb2',
-             'drx_qz',
-             'drx_pl',
-             'drx_fk',
-             'drx_ca',
-             'drx_py',
-             'drx_arc',
-             'drx_arc_i',
-             'drx_arc_is',
-             'drx_arc_cl',
-             'drx_arc_k']
+def get_columns_features(df):
+    
+    columns_features = df.filter(like='drx_').columns
+    
+    print(df.filter(like='geo_').columns)
+    columns_features = columns_features + df.filter(like='geo_').columns
+    
+    return columns_features
 
 def get_columns_targets():
     return 'toc'
 
 def get_features(df):
     '''returns features'''
-    columns_features = get_columns_features()
+    columns_features = get_columns_features(df)
     return df[columns_features]
 
 def get_targets(df):

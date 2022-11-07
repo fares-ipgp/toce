@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/18dfe92a1364458381037302e3ea26ab/artifacts
+deleted_time: 1667846923819
+end_time: 1667840498934
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 18dfe92a1364458381037302e3ea26ab
+run_name: burly-fowl-256
+run_uuid: 18dfe92a1364458381037302e3ea26ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667840498042
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/7b9e21179c6049b8a8c1629e60ba25df/artifacts
+deleted_time: 1667833726188
+end_time: 1667830279094
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 7b9e21179c6049b8a8c1629e60ba25df
+run_name: burly-crane-43
+run_uuid: 7b9e21179c6049b8a8c1629e60ba25df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667830278715
+status: 3
+tags: []
+user_id: root

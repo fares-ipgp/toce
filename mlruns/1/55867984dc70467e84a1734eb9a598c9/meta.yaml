@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/55867984dc70467e84a1734eb9a598c9/artifacts
+deleted_time: 1667846927096
+end_time: 1667834405669
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 55867984dc70467e84a1734eb9a598c9
+run_name: amazing-whale-111
+run_uuid: 55867984dc70467e84a1734eb9a598c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667834400809
+status: 3
+tags: []
+user_id: root

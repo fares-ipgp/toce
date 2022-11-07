@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/40bcdaa24d7e4dc4a48992333bfc9efa/artifacts
+deleted_time: 1667846930744
+end_time: 1667834087776
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 40bcdaa24d7e4dc4a48992333bfc9efa
+run_name: polite-crab-248
+run_uuid: 40bcdaa24d7e4dc4a48992333bfc9efa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667834083137
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/fa4dde0978d74886986b69b90797feae/artifacts
+deleted_time: 1667846928935
+end_time: 1667834137519
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: fa4dde0978d74886986b69b90797feae
+run_name: suave-squirrel-461
+run_uuid: fa4dde0978d74886986b69b90797feae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667834133958
+status: 3
+tags: []
+user_id: root

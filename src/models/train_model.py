@@ -6,12 +6,17 @@ import json
 # pandas
 import pandas as pd
 
-#sklearn
-from skopt.space import Real, Categorical, Integer
-from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
-from skopt import BayesSearchCV
+# mflow
+import mlflow
+import mlflow.sklearn
 
+#sklearn
+from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
 from sklearn.svm import SVR
+
+# skopt
+from skopt import BayesSearchCV
+from skopt.space import Real, Categorical, Integer
 
 # project
 sys.path.append('src')

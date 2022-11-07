@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/204a2075ad96459cbeab57f5ebb1c9a1/artifacts
+deleted_time: 1667833721938
+end_time: 1667832768502
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 204a2075ad96459cbeab57f5ebb1c9a1
+run_name: melodic-roo-933
+run_uuid: 204a2075ad96459cbeab57f5ebb1c9a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667832767072
+status: 3
+tags: []
+user_id: root

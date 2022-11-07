@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/d6fc3fc75879410ab5464d19ff9d9caf/artifacts
+deleted_time: 1667846922349
+end_time: 1667841774886
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: d6fc3fc75879410ab5464d19ff9d9caf
+run_name: gentle-stoat-311
+run_uuid: d6fc3fc75879410ab5464d19ff9d9caf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667841774015
+status: 3
+tags: []
+user_id: root

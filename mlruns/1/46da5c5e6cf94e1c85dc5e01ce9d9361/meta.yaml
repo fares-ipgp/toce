@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/46da5c5e6cf94e1c85dc5e01ce9d9361/artifacts
+deleted_time: 1667833725331
+end_time: 1667831660569
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 46da5c5e6cf94e1c85dc5e01ce9d9361
+run_name: unruly-cow-723
+run_uuid: 46da5c5e6cf94e1c85dc5e01ce9d9361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667831660206
+status: 4
+tags: []
+user_id: root

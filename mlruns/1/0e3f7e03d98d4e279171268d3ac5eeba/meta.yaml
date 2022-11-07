@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/0e3f7e03d98d4e279171268d3ac5eeba/artifacts
+deleted_time: 1667846931705
+end_time: 1667833820345
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 0e3f7e03d98d4e279171268d3ac5eeba
+run_name: sedate-sheep-885
+run_uuid: 0e3f7e03d98d4e279171268d3ac5eeba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667833816727
+status: 3
+tags: []
+user_id: root

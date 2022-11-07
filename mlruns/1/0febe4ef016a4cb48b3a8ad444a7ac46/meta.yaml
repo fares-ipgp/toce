@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/0febe4ef016a4cb48b3a8ad444a7ac46/artifacts
+deleted_time: 1667833724258
+end_time: 1667831816558
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 0febe4ef016a4cb48b3a8ad444a7ac46
+run_name: learned-cub-581
+run_uuid: 0febe4ef016a4cb48b3a8ad444a7ac46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667831816205
+status: 4
+tags: []
+user_id: root

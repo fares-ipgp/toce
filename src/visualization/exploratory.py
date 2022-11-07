@@ -13,7 +13,7 @@ from data.preprocess import read_processed_data
 from data.preprocess import get_columns_features, get_columns_targets 
 
 def pairplot(df):
-    g = sns.PairGrid(df,vars = get_columns_features(), hue=get_columns_targets(), diag_sharey=False, corner=True)
+    g = sns.PairGrid(df,vars = get_columns_features(df), hue=get_columns_targets(), diag_sharey=False, corner=True)
     g.map_lower(sns.scatterplot)
     g.map_diag(sns.histplot,fill=False , hue=None, element="poly")
     g.add_legend()

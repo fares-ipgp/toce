@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/10de1deeb82a475fba647cd4adc4e036/artifacts
+deleted_time: 1667833725149
+end_time: 1667831735941
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 10de1deeb82a475fba647cd4adc4e036
+run_name: auspicious-rook-898
+run_uuid: 10de1deeb82a475fba647cd4adc4e036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667831735607
+status: 4
+tags: []
+user_id: root

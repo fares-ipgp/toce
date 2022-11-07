@@ -1,0 +1,16 @@
+artifact_uri: file:///workspaces/toce/mlruns/1/2fb683e1a17a4e61946f9a59d196ac77/artifacts
+deleted_time: 1667846922778
+end_time: 1667841701165
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 2fb683e1a17a4e61946f9a59d196ac77
+run_name: powerful-ray-827
+run_uuid: 2fb683e1a17a4e61946f9a59d196ac77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667841699964
+status: 3
+tags: []
+user_id: root
