@@ -9,7 +9,7 @@ def get_columns_features(df):
     return columns_features
 
 def get_columns_targets():
-    return 'imp_toc'
+    return 'toc'
 
 def get_features(df):
     '''returns features'''
@@ -42,7 +42,8 @@ def main(input_file, output_file):
     # read
     df = read_raw_data(input_file)
     
-    df_sel_cols = df[get_columns_features(df) + get_columns_targets(df)]
+    # select columns
+    df_sel_cols = df[get_columns_features(df) + [get_columns_targets()]]
     
     # preprocess
     df = preprocess_data(df_sel_cols)

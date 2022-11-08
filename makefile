@@ -1,26 +1,28 @@
 
 .PHONY: all clean update-env
 
-TOC_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/toce_sichuan.csv"
+BASE_DATA_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/"
 
-TOC_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/toce_mayer.csv"
+DATA = data/raw/toce_mayer.csv
+DATA_PROC = data/processed/processed_toce_mayer.pickle
+MODELS = models/svr.model
 
-all: data/raw/toce.csv data/processed/processed.pickle models/svr.model
+all: $(DATA) $(DATA_PROC) $(MODELS)
 
 update-env:
 	conda env update -f ./.devcontainer/environment.yml -n toce 
 
-data/raw/toce.csv:
-	python src/data/download.py $(TOC_URL) $@
+data/raw/%.csv:
+	python src/data/download.py $(BASE_DATA_URL)$*.csv $@
 
-reports/figures/exploratory.png: data/processed/processed.pickle
-	python src/visualization/exploratory.py $< $@
-
-data/processed/processed.pickle: data/raw/toce.csv
+data/processed/processed_%.pickle: data/raw/%.csv
 	python src/data/preprocess.py $< $@ 
 
-models/svr.model: data/processed/processed.pickle
-	python src/models/train.py $< $@
+models/%.model: $(DATA_PROC) 
+	python src/models/train.py $< $@ $*
+
+reports/figures/%.png: $(DATA_PROC) 
+	python src/visualization/$*.py $< $@
 
 clean:
 	# python cache
@@ -33,5 +35,5 @@ clean:
 	rm -f reports/figures/*.png
 	rm -f models/*.model
 
-	# mlflow
+	# mlflow trash
 	rm -rf mlruns/.trash

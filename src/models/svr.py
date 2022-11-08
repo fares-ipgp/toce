@@ -19,7 +19,7 @@ class SVRModel(BaseModel):
         self.name = 'Support Vector Regression'
         
         pre = Preprocess()
-        svr = SVR(C=1, epsilon=0.01, kernel='rbf',verbose=1)
+        svr = SVR()
                
         # Model 
         self.model = Pipeline(steps=[('pre', pre.get_model()), ('svr', svr) ])
