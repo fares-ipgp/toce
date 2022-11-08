@@ -3,15 +3,13 @@ import pandas as pd
 
 def get_columns_features(df):
     
-    columns_features = df.filter(like='drx_').columns
-    
-    print(df.filter(like='geo_').columns)
-    columns_features = columns_features + df.filter(like='geo_').columns
+    columns_features = list(df.filter(like='drx_').columns)
+    #columns_features = columns_features + list(df.filter(like='geo_').columns)
     
     return columns_features
 
 def get_columns_targets():
-    return 'toc'
+    return 'imp_toc'
 
 def get_features(df):
     '''returns features'''
@@ -44,8 +42,10 @@ def main(input_file, output_file):
     # read
     df = read_raw_data(input_file)
     
+    df_sel_cols = df[get_columns_features(df) + get_columns_targets(df)]
+    
     # preprocess
-    df = preprocess_data(df)
+    df = preprocess_data(df_sel_cols)
 
     # write
     df.to_pickle(output_file)

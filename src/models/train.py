@@ -15,6 +15,8 @@ import mlflow.sklearn
 #sklearn
 from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
 from sklearn.svm import SVR
+from sklearn.svm import LinearSVR
+from sklearn.neighbors import KNeighborsRegressor
 
 #metrics
 from sklearn.metrics import r2_score
@@ -57,27 +59,24 @@ def main(input_file, output_file):
 
     df = read_processed_data(input_file)
     
-    model = SVR()
+          
+    model = LinearSVR()
     
     # define search space
     search_space = dict()
     search_space['C'] = Real(1e-6, 100.0, 'log-uniform')
     search_space['epsilon'] = Real(1e-6, 100.0, 'log-uniform')
-    #search_space['degree'] = Integer(1,5)
-    search_space['kernel'] = Categorical(['linear', 
-                                          #'poly', 
-                                          #'rbf', 
-                                          #'sigmoid'
-                                          ])
-    
+    search_space['loss'] = Categorical(['epsilon_insensitive', 
+                                          'squared_epsilon_insensitive'])
+   
     # optimizers
     kf = KFold(n_splits = 10, shuffle = True, random_state = 42)                                          
     loo = LeaveOneOut() 
     
     opt = BayesSearchCV(model, 
                      search_space,
-                     n_iter = 25,
-                     cv = kf,
+                     n_iter = 40,
+                     cv = loo,
                      n_jobs = -1,
                      scoring = "neg_mean_absolute_error",
                      random_state = 42, verbose = 3,
@@ -91,7 +90,7 @@ def main(input_file, output_file):
  
     log_params = [ 'param_C',
                   'param_epsilon',
-                  'param_kernel'
+                  'param_loss'
                  ]
 
     log_metric = ['mean_test_score',
@@ -126,8 +125,8 @@ def main(input_file, output_file):
     mlflow.end_run()
     
 
-    with open(output_file, 'wb') as ofile:
-        pickle.dump(model, ofile, pickle.HIGHEST_PROTOCOL)
+    #with open(output_file, 'wb') as ofile:
+    #    pickle.dump(model, ofile, pickle.HIGHEST_PROTOCOL)
    
 if __name__ == '__main__':
     main()

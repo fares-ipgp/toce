@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/toce/mlruns/0/a49df3e66c1a4e1d983a3ff56363050e/artifacts
+end_time: 1667907824046
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a49df3e66c1a4e1d983a3ff56363050e
+run_name: delicate-boar-848
+run_uuid: a49df3e66c1a4e1d983a3ff56363050e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667907821831
+status: 3
+tags: []
+user_id: root

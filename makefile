@@ -2,6 +2,7 @@
 .PHONY: all clean update-env
 
 TOC_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/toce_sichuan.csv"
+
 TOC_URL = "https://raw.githubusercontent.com/fares-ipgp/toce/main/data/external/toce_mayer.csv"
 
 all: data/raw/toce.csv data/processed/processed.pickle models/svr.model
@@ -31,3 +32,6 @@ clean:
 	rm -f data/processed/*.pickle
 	rm -f reports/figures/*.png
 	rm -f models/*.model
+
+	# mlflow
+	rm -rf mlruns/.trash

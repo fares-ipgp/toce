@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/toce/mlruns/0/55cf59ea477a48e696da7ddf733b339b/artifacts
+end_time: 1667908081799
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 55cf59ea477a48e696da7ddf733b339b
+run_name: enchanting-bird-330
+run_uuid: 55cf59ea477a48e696da7ddf733b339b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667908077536
+status: 3
+tags: []
+user_id: root

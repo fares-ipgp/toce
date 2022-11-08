@@ -50,7 +50,6 @@ class BaseModel(object):
         metrics['mape']=mean_absolute_percentage_error(y,y_pred)
         
         return metrics
-        
 
     def save(self, fn):
         with open(fn, 'wb') as ofile:
